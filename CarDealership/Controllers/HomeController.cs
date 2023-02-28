@@ -12,8 +12,15 @@ namespace CarDealership.Controllers
         [HttpGet("/")]
         public ActionResult Index()
         {
-            return View();
+          return View();
         }
+        
+        // route for /new with form on it
 
+        [HttpGet("/new")]
+        public ActionResult AddCarForm()
+        {
+          return View();
+        }
     }
 }
